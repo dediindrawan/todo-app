@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <!-- connecting css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- connecting cdnjs font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- wrapper-registration start -->
+    <div id="regist-form" class="wrapper-registration">
+        <h2>Welcome to TodoApp</h2>
+        <h5>Manage Your Tasks Today With Excelent</h5>
+        <!-- registration-box start -->
+        <div class="registration-box">
+            <input type="text" class="user-input" required maxlength="13" placeholder="Type your name here..">
+            <!-- create tooltip for attention -->
+            <span class="tooltip">you have only 13 maximum character</span>
+            <button type="submit" class="btn-submit">Submit</button>
+        </div>
+        <!-- registration-box end -->
+    </div>
+    <!-- wrapper-registration end -->
+
+    <!-- wrapper-alert-login start -->
+    <div class="wrapper-alert-login">
+        <!-- alert-box start -->
+        <div class="alert-box">
+            <h4>please input your name before click button submit !</h4>
+            <button type="submit" onclick="closeAlertlogin()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- alert-box end -->
+    </div>
+    <!-- wrapper-alert-login end -->
+
+    <!-- wrapper-alert-btn-add start -->
+    <div class="wrapper-alert-btn-add">
+        <!-- alert-box start -->
+        <div class="alert-box">
+            <h4>you must write something before click button add !</h4>
+            <button type="submit" onclick="closeAlertBtnAdd()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- alert-box end -->
+    </div>
+    <!-- wrapper-alert-btn-add end -->
+
+    <!-- wrapper-alert-btn-clear start -->
+    <div class="wrapper-alert-btn-clear">
+        <!-- alert-box start -->
+        <div class="alert-box">
+            <h4>you have no anything task's to removed !</h4>
+            <button type="submit" onclick="closeAlertClearAll()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- alert-box end -->
+    </div>
+    <!-- wrapper-alert-btn-clear end -->
+
+    <!-- info-app start -->
+    <div class="info-app">
+        <h3>Welcome to TodoApp</h3>
+        <br>
+        <h4>Information Product :</h4>
+        <p>TodoApp is a to do list application based on website. TodoApp can help you to give reminding on all your
+            daily activity. You can create and manage every your tasks with excelent.</p>
+        <br>
+        <p>Hope you can enjoy this web app. Best Regards,</p>
+        <br>
+        <h4>Information Developer :</h4>
+        <p>Made With Coffee, By: <a href="https://linktr.ee/dediindra_one" target="_blank">Dedi Indrawan</a></p>
+        <br>
+        <h5>Copyright &copy; <span></span></h5>
+        <button type="submit" onclick="infoAppClosed()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <!-- info-app end -->
+
+    <!-- title start -->
+    <header class="title">
+        <!-- clock-time start -->
+        <div class="clock-time">
+            <h2>TodoApp <i class="fa-solid fa-circle-info" onclick="openInfoApp()"></i></h2>
+            <h5 class="clock"></h5>
+        </div>
+        <!-- clock-time end -->
+
+        <!-- user-profile start -->
+        <div class="user-profile">
+            <div class="avatar"></div>
+            <h3 class="username"></h3>
+            <button type="submit" class="edit-name" onclick="editName()">Edit or Change Name <i
+                    class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+        <!-- user-profile end -->
+    </header>
+    <!-- title end -->
+
+    <!-- wrapper-review start -->
+    <header class="wrapper-review">
+        <!-- review start -->
+        <div class="review">
+            <span>
+                <h4></h4>
+                <h5 class="date-time"></h5>
+            </span>
+            <!-- summary start -->
+            <div class="summary">
+                <div class="total-task"></div>
+                <button type="submit" class="btn-clear-all">Clear All Tasks</button>
+            </div>
+            <!-- summary end -->
+        </div>
+        <!-- review end -->
+    </header>
+    <!-- wrapper-review end -->
+
+    <!-- container-content start -->
+    <main class="container-content">
+        <!-- task-content start -->
+        <ul class="task-content"></ul>
+        <!-- task-content end -->
+    </main>
+    <!-- container-content end -->
+
+    <!-- group-input start -->
+    <footer class="group-input">
+        <input type="text" class="task-input" placeholder="Create your tasks today..">
+        <button type="submit" class="btn-add"><i class="fa-solid fa-plus"></i></button>
+    </footer>
+    <!-- group-input end -->
+
+    <!-- connected javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
