@@ -14,12 +14,13 @@
 :root {
   --font-roboto: 'Roboto', sans-serif;
   --font-size: 1rem;
-  --dark-grey-color: #22254c;
+  --dark-green-color: #688f4e;
   --grey-color: #2c373b;
   --warning-color: #f9be7d;
   --white-color: #fff9ed;
   --primary-color: #6488e5;
   --danger-color: #e56372;
+  --secondary-color:#b1d182;
 }
 
 ::selection {
@@ -417,7 +418,7 @@ i {
 
 .task-item i {
   margin-left: 1em;
-  color: var(--warning-color);
+  color: var(--secondary-color);
 }
 
 /* list-item style */
@@ -482,6 +483,6 @@ i {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
-  color: var(--white-color);
-  background: var(--warning-color);
+  color: var(--dark-green-color);
+  background: var(--secondary-color);
 }
